@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: #145da0;
     color: aliceblue;
 }
 
@@ -53,9 +53,11 @@ body {
     align-items: center;
     height: 100vh;
     padding: 0 10%;
-    /*background: url("C:\Users\sarap\Downloads\Telegram Desktop\photo_2024-01-17_15-40-07.jpg") no-repeat;
-    background-size: cover;
-    background-position: right;*/
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    
+
 }
 
 .home-content {
@@ -169,4 +171,22 @@ body {
 
 .home-sci a:hover {
     color: cadetblue
+}
+
+.home-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 170px;
+}
+
+.home-img img {
+    max-width: 310px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
 }
