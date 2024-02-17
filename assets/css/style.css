@@ -32,6 +32,7 @@ body {
     color: aliceblue;
     text-decoration: none;
     font-weight: 600;
+    position: relative;
 }
 
 .navbar a {
@@ -41,7 +42,8 @@ body {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-    display: inline-block
+    display: inline-block;
+    
 }
 
 .navbar a:hover {
@@ -65,6 +67,7 @@ body {
 }
 
 .home-content h1 {
+    position: relative;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
@@ -74,17 +77,20 @@ body {
     font-size: 32px;
     font-weight: 700;
     color: aqua;
+    position: relative;
 }
 
 .home-content p {
     font-size: 16px;
     margin: 20px 0 40px;
+    position: relative;
 }
 
 .home-content .btn-box {
     width: 375px;
     height: 50px;
     display: flex;
+    position: relative;
 }
 
 .btn-box a {
@@ -114,7 +120,7 @@ body {
     left: 0;
     width: 0%;
     height: 100%;
-    background: cadetblue;
+    background: #145da0;
     z-index: -1;
     transition: .5s;
 }
@@ -124,7 +130,7 @@ body {
 }
 
 .btn-box a:hover {
-    color: rgb(2, 71, 71);
+    color: #145da0;
 }
 
 .home-sci {
@@ -160,7 +166,7 @@ body {
     left: 0;
     width: 0%;
     height: 100%;
-    background: cadetblue;
+    background: #145da0;
     z-index: -1;
     transition: .5s;
 }
@@ -170,7 +176,7 @@ body {
 }
 
 .home-sci a:hover {
-    color: cadetblue
+    color: #145da0
 }
 
 .home-img {
@@ -189,4 +195,149 @@ body {
 
 .home-img img:hover {
     transform: scale(1.05);
+}
+
+.home-content h1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #145da0;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #145da0;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #145da0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #145da0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #145da0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #145da0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.home-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #145da0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #145da0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
+}
+
+/*KEYFRAMES ANIMATION*/
+@keyframes showRight {
+    100% {
+        width: 0;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        padding: 20px;
+    }
+
+
+    .home {
+        padding: 20px;
+    }
+
+    .home-img {
+        display: none; /* Nascondi l'immagine su dispositivi mobili */
+    }
+
+    .home-content p {
+        font-size: 14px;
+        word-wrap: break-word; /* Impedisce il taglio del testo */
+        overflow: wrap; /* Assicura che il testo si avvolga quando raggiunge il limite dello schermo */
+    }
+
+    .btn-box {
+        margin-top: 20px; /* Aggiungi spazio sopra al pulsante su dispositivi mobili */
+    }
 }
