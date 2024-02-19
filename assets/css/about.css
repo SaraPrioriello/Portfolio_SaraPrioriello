@@ -388,7 +388,7 @@ body {
     .navbar {
         position: absolute;
         top: 100%;
-        left:0;
+        left: -100%;
         width: 100%;
         padding: 1rem 4%;
         background-color: aqua;
@@ -400,7 +400,7 @@ body {
 
     .navbar.active {
         left: 0;
-        transition-delay: .25s;
+        transition-delay: 0s;
     }
 
     .navbar .active-nav {
@@ -413,7 +413,7 @@ body {
         border-top: .1rem solid black;
         z-index: -1;
         transition: .25s ease;
-        -o-transition-delay: 0s;
+        transition-delay: 0s;
     }
 
     .navbar.active .active-nav {
@@ -425,7 +425,7 @@ body {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-        transform: translate(-20rem);
+        transform: translateX(-20rem);
         transition: .25s;
         transition-delay: 0s;
     }
