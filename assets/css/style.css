@@ -218,7 +218,7 @@ body {
     height: 100%;
     background: #145da0;
     animation: showRight 1s ease forwards;
-    animation-delay: .4s;
+    animation-delay: 0.4s;
 }
 
 .home-content h3::before {
@@ -293,8 +293,8 @@ body {
     height: 100%;
     background: #145da0;
     animation: showRight 1s ease forwards;
-    animation-delay: 2.5s;
-    z-index: 2;
+    animation-delay: 0.4s;
+    z-index: 1;
 }
 
 .footer {
@@ -317,7 +317,10 @@ body {
     }
 }
 
-@media only screen and (max-width: 767px) {
+
+
+/*RISOLUZIONE PER SMARTPHONE*/
+@media only screen and (max-width: 867px) {
     .header {
         padding: 20px;
     }
@@ -340,4 +343,5 @@ body {
     .btn-box {
         margin-top: 20px; /* Aggiungi spazio sopra al pulsante su dispositivi mobili */
     }
+
 }
