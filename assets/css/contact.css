@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    /*margin: 0px;
+    padding: 0px;*/
+    box-sizing: border-box;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: aqua;
+    cursor: pointer;
+    display: none;
+}
+
+body {
+    background-color: #145da0;
+    color: aliceblue;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #145da0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    display: inline-block;
+    
+}
+
+.navbar a:hover {
+    color: aqua;
+} 
+
+.heading {
+    font-size: 5rem;
+    margin-top: 90px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+    
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.contact form {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contact form .input-box .input-field input, 
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: aliceblue;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid aqua;
+}
+
+.contact form .input-box .input-field input::placeholder, 
+.contact form .textarea-field textarea::placeholder{
+    color: aliceblue;
+}
+
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.btn-box .btn{
+    width: 275px;
+    height: 90px;
+    display: flex;
+    position: relative;
+}
+
+.btn-box .btn {
+    /*width: 150px;*/
+    /*height: 100%;*/
+    background: aqua;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    display: inline-flex;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #145da0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.btn-box .btn:hover {
+    color: #145da0;
+}
+
+.contact form .btn-box .btn {
+    cursor: pointer;
+}
+
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #2273be;
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .input-box .input-field input:focus~.focus, .contact form .input-box .input-field input:valid~.focus, .contact form .textarea-field textarea:focus~.focus, .contact form .textarea-field textarea:valid~.focus {
+    width: 100%;
+    
+}
+
+.footer {
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
+}
+
+
+/*SMARTPHONE*/
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: #145da0;
+    }
+    
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left:0;
+        width: 100%;
+        padding: 1rem 4%;
+        background-color: aqua;
+        box-shadow: 0 .5rem 1rem black;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci {
+        width: 160px;
+    }
+
+    .home-sci a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 462px) {
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+
+    .education {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        text-align: center;
+        font-size: 1px;
+    }
+}
+
+@media (max-width: 371px) {
+    .home {
+        justify-content: center;
+    }
+    
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+}
