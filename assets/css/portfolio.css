@@ -55,137 +55,66 @@ body {
     color: aqua;
 } 
 
-.heading {
+#portfolio {
+    padding-top: 5%;
+    padding-bottom: 0;
+    padding-left: 7%;
+    padding-right: 7%;
+    background: #2273be;
+    
+    
+  }
+  
+  .portfolio-initial-text h1 {
     font-size: 5rem;
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 1rem;
     text-align: center;
-}
+  }
 
-    
-.contact {
-    min-height: auto;
-    padding-bottom: 7rem;
-}
-
-.contact form {
-    max-width: 80%;
-    margin: 0 auto;
+  .portfolio-initial-text p {
     text-align: center;
-    margin-top: 50px;
-}
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
 
-
-
-.contact form .input-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box .input-field {
-    position: relative;
-    width: 49%;
-    margin: .8rem 0;
-}
-
-.contact form .input-box .input-field input, 
-.contact form .textarea-field textarea {
-    width: 100%;
-    height: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: aliceblue;
-    background: transparent;
-    border-radius: .6rem;
-    border: .2rem solid aqua;
-}
-
-.contact form .input-box .input-field input::placeholder, 
-.contact form .textarea-field textarea::placeholder{
-    color: aliceblue;
-}
-
-.contact form .textarea-field {
-    position: relative;
-    margin: .8rem 0 2.7rem;
-    display: flex;
-}
-
-.contact form .textarea-field textarea {
-    resize: none;
-}
-
-.btn-box .btn{
-    width: 275px;
-    height: 90px;
-    display: flex;
-    position: relative;
-}
-
-.btn-box .btn {
-    /*width: 150px;*/
-    /*height: 100%;*/
-    background: aqua;
-    border: 2px solid aqua;
-    border-radius: 5px;
-    display: inline-flex;
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.btn-box .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: #145da0;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box .btn:hover::before {
-    width: 100%;
-}
-
-.btn-box .btn:hover {
-    color: #145da0;
-}
-
-.contact form .btn-box .btn {
+  
+  .portfolio-projects {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 160px;
+  }
+  
+  .box {
     cursor: pointer;
-}
-
-.contact form .focus {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #2273be;
-    border-radius: .6rem;
-    z-index: -1;
-    transition: .5s;
-}
-
-.contact form .input-box .input-field input:focus~.focus, .contact form .input-box .input-field input:valid~.focus, .contact form .textarea-field textarea:focus~.focus, .contact form .textarea-field textarea:valid~.focus {
+    margin-bottom: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .box img {
     width: 100%;
-    
-}
+    height: auto;
+    border-radius: 24px;
+    margin-bottom: 16px;
 
-.footer {
+  }
+  
+  .box:hover img {
+    transform: scale(1.1);
+    transition: all 0.30s;
+  }
+  
+  .box h2 {
+    margin-bottom: 8px;
+    color: aqua;
+  }
+
+
+ 
+
+  .footer {
     position: bottom;
     bottom: 0;
     left: 0;
@@ -196,6 +125,9 @@ body {
     padding: 10px 0;
     font-size: 10px;
 }
+
+
+
 
 
 /*SMARTPHONE*/
@@ -226,8 +158,12 @@ body {
 @media (max-width: 768px) {
     .header {
         background: #145da0;
+        
     }
     
+    .portfolio-initial-text h1 {
+        margin-top: 30px;
+    }
     
     #menu-icon {
         display: block;

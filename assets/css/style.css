@@ -382,6 +382,7 @@ body {
     .navbar.active {
         left: 0;
         transition-delay: 0s;
+        background: #145da0;
     }
 
     .navbar .active-nav {
@@ -400,6 +401,7 @@ body {
     .navbar.active .active-nav {
         transition-delay: .25s;
         left: 0;
+        background: aqua;
     }
 
     .navbar a {
