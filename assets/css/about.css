@@ -352,16 +352,17 @@ body {
 
 /* Stili per il layout responsive */
 @media only screen and (max-width: 768px) {
-    .education-row {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .education-column {
-      margin-bottom: 30px;
-    }
+  .education-row {
+    display: flex;
+    flex-direction: column;
   }
-  
+
+  .education-column {
+    margin-bottom: 30px;
+  }
+
+}
+
 
 /*SMARTPHONE*/
 @media (max-width:1200px) {
@@ -381,6 +382,14 @@ body {
 
     .home {
         padding: 0 4%;
+    }
+
+    .skills {
+        display: block;
+    flex-direction:column;
+    
+    
+
     }
 
     .footer {
@@ -448,7 +457,25 @@ body {
         transition-delay: .25s;
     }
 
+    .skills .skills-row {
+        justify-content: flex-start; /* Allinea le colonne a sinistra */
+    }
+
+    .skills .skills-column {
+        margin-left: 0; /* Rimuove il margine sinistro */
+        margin-right: 0; /* Rimuove il margine destro */
+    }
+
+    .skills .skills-column:first-child {
+        margin-left: 0; /* Imposta il margine sinistro della prima colonna a 0 */
+    }
+
+    .skills .skills-column:last-child {
+        margin-right: 0; /* Imposta il margine destro dell'ultima colonna a 0 */
+    }
 }
+
+
 
 @media (max-width: 520px) {
     html {
