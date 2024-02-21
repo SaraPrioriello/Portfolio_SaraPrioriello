@@ -350,6 +350,19 @@ body {
     font-size: 10px;
 }
 
+/* Stili per il layout responsive */
+@media only screen and (max-width: 768px) {
+    .education-row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .education-column {
+      margin-bottom: 30px;
+    }
+  }
+  
+
 /*SMARTPHONE*/
 @media (max-width:1200px) {
     html {
