@@ -142,19 +142,12 @@ body {
     color: #145da0;
 }
 
-.home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    margin-left: 5px;
-    
-    
+
+.footer-sci {
+    padding: 10px;
 }
 
-.home-sci a {
+.footer-sci a {
     display: inline-flex;
     width: 40px;
     height: 40px;
@@ -172,7 +165,7 @@ body {
     transition: .5s;
 }
 
-.home-sci a::before {
+.footer-sci a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -184,11 +177,11 @@ body {
     transition: .5s;
 }
 
-.home-sci a:hover::before {
+.footer-sci a:hover::before {
     width: 100%;
 }
 
-.home-sci a:hover {
+.footer-sci a:hover {
     color: #145da0
 }
 
@@ -271,7 +264,7 @@ body {
     z-index: 2;
 }
 
-.home-sci::before {
+.footer-sci::before {
     content: '';
     position: absolute;
     top: 0;
@@ -371,7 +364,7 @@ footer {
 }
 
 @media (max-width: 991px) {
-    .home-sci {
+    .footer-sci {
         margin-top: 2rem; /* Aggiungi uno spazio superiore per separare le icone dal footer */
     }
 }
@@ -380,6 +373,18 @@ footer {
 @media (max-width: 768px) {
     .header {
         background: #145da0;
+    }
+    
+    .home {
+        position: relative; /* Assicura che l'elemento .home sia posizionato */
+    }
+    
+    
+    
+    footer {
+        position: relative; /* Assicura che il footer sia posizionato */
+        z-index: -1; /* Assicurati che il footer abbia un indice Z inferiore rispetto alle icone */
+        padding: 2rem 0; /* Aggiungi spazio intorno al footer */
     }
     
    
@@ -461,11 +466,11 @@ footer {
         flex-direction: column;
     }
 
-    .home-sci {
+    .footer-sci {
         width: 160px;
     }
     
-    .home-sci a {
+    .footer-sci a {
         width: 38px;
         height: 38px;
     }
