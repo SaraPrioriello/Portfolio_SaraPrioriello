@@ -476,13 +476,15 @@ footer {
 
 @media (max-width: 520px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
 
     .home-content p {
         font-size: small;
+        margin-right: 30px;
+        flex-direction: column;
     }
-    
+
     .home-content h1 {
         display: flex;
         flex-direction: column;

@@ -170,6 +170,11 @@ body {
         
     }
     
+
+    .portfolio-projects p {
+        font-size: 15px;
+    }
+
     .portfolio-initial-text h1 {
         margin-top: 30px;
     }
