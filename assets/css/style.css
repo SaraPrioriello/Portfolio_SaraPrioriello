@@ -28,7 +28,7 @@ body {
     left: 0px;
     width: 100%;
     padding: 20px 10%;
-    background-color: transparent;
+    background-color: #145da0;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -43,7 +43,17 @@ body {
     position: relative;
 }
 
-.navbar a {
+.navbar { 
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    display: inline-block; 
+}
+
+.navbar a { 
     font-size: 18px;
     color: aliceblue;
     text-decoration: none;
@@ -51,12 +61,12 @@ body {
     margin-left: 35px;
     transition: .3s;
     display: inline-block;
-    
 }
 
 .navbar a:hover {
     color: aqua;
 } 
+
     
 .home {
     display: flex;
@@ -333,6 +343,7 @@ footer {
         font-size: 55%;
     }
     
+
     .home-img {
         display: none;
     }
@@ -369,43 +380,14 @@ footer {
     }
 }
 
-
-@media (max-width: 768px) {
-    .header {
-        background: #145da0;
-    }
-    
-    .home {
-        position: relative; /* Assicura che l'elemento .home sia posizionato */
-    }
-    
-    footer {
-        position: fixed; /* Mantieni il footer in basso */
-        z-index: 1; /* Assicura che il footer sia sopra agli altri contenuti */
-        padding: 2rem 0;/
-    }
-    
-   
-    .home-content {
-        padding-bottom: 50px;
-    }
-
+@media (max-width: 620px) {
     #menu-icon {
         display: block;
     }
-
-    .footer-sci {
-        flex-direction: row; /* Imposta le icone in riga */
-        justify-content: center; /* Centra le icone orizzontalmente */
-        align-items: center; /* Centra le icone verticalmente */
-    }
-
-    }
-
     .navbar {
         position: absolute;
         top: 100%;
-        left: -100%;
+        left: -200%;
         width: 100%;
         padding: 1rem 4%;
         background-color: aqua;
@@ -416,7 +398,7 @@ footer {
     }
 
     .navbar.active {
-        left: 0;
+        left: -35px;
         transition-delay: 0s;
         background: #145da0;
     }
@@ -424,7 +406,7 @@ footer {
     .navbar .active-nav {
         position: absolute;
         top: 0;
-        left: -100%;
+        left: -200%;
         width: 100%;
         height: 100%;
         background: #145da0;
@@ -454,7 +436,40 @@ footer {
         transition-delay: .25s;
     }
 
+    
+}
 
+@media (max-width: 768px) {
+    .header {
+        background: #145da0;
+    }
+    
+    .home {
+        position: relative; /* Assicura che l'elemento .home sia posizionato */
+    }
+    
+    footer {
+        position: fixed; /* Mantieni il footer in basso */
+        z-index: 1; /* Assicura che il footer sia sopra agli altri contenuti */
+        padding: 2rem 0;/
+    }
+    
+   
+    .home-content {
+        padding-bottom: 50px;
+    }
+
+   
+
+    .footer-sci {
+        flex-direction: row; /* Imposta le icone in riga */
+        justify-content: center; /* Centra le icone orizzontalmente */
+        align-items: center; /* Centra le icone verticalmente */
+    }
+
+    }
+
+    
 
 @media (max-width: 520px) {
     html {
@@ -471,7 +486,63 @@ footer {
         justify-content: center; /* Centra le icone orizzontalmente */
         align-items: center; /* Centra le icone verticalmente */
     }
+
     
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -200%;
+        width: 100%;
+        padding: 1rem 4%;
+        background-color: aqua;
+        box-shadow: 0 .5rem 1rem black;
+        transition: .25s ease;
+        transition-delay: .25s;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        left: -35px;
+        transition-delay: 0s;
+        background: #145da0;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -200%;
+        width: 100%;
+        height: 100%;
+        background: #145da0;
+        border-top: .1rem solid black;
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        transition-delay: .25s;
+        left: 0;
+        background: aqua;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+
 }
 
 @media (max-width: 462px) {
@@ -485,6 +556,61 @@ footer {
 
     .contact form .input-box .input-field {
         width: 100%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -200%;
+        width: 100%;
+        padding: 1rem 4%;
+        background-color: aqua;
+        box-shadow: 0 .5rem 1rem black;
+        transition: .25s ease;
+        transition-delay: .25s;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        left: -35px;
+        transition-delay: 0s;
+        background: #145da0;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -200%;
+        width: 100%;
+        height: 100%;
+        background: #145da0;
+        border-top: .1rem solid black;
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        transition-delay: .25s;
+        left: 0;
+        background: aqua;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
     }
 
     .footer-sci {

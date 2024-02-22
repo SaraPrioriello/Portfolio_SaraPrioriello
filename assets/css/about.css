@@ -404,6 +404,7 @@ footer {
     .skills {
         display: block;
     flex-direction:column;
+    }
     
     .skills .skills-row {
         justify-content: flex-start; /* Allinea le colonne a sinistra */
@@ -427,7 +428,7 @@ footer {
     footer {
         padding: 2rem 4%;
     }
-}
+
 
 @media (max-width: 768px) {
     .header {
