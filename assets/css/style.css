@@ -151,6 +151,7 @@ body {
     padding-bottom: 20px;
     margin-left: 5px;
     
+    
 }
 
 .home-sci a {
@@ -336,6 +337,10 @@ footer {
     html {
         font-size: 55%;
     }
+    
+    .home-img {
+        display: none;
+    }
 }
 
 @media (max-width: 991px) {
@@ -343,12 +348,16 @@ footer {
         display: none;
     }
 
+    .home-content {
+        padding-bottom: 50px;
+    }
+
     .header {
         padding: 2rem 4%;
     }
 
     section {
-        padding: 10rem 4% 2rem;
+        padding: 5rem 4% 2rem;
     }
 
     .home {
@@ -374,6 +383,10 @@ footer {
     }
     
    
+    .home-content {
+        padding-bottom: 50px;
+    }
+
     #menu-icon {
         display: block;
     }
