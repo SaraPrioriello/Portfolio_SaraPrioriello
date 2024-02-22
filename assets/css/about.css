@@ -221,7 +221,7 @@ body {
     flex-direction: column;
     min-height: auto;
     padding-bottom: 3rem;
-    background: #2273be;
+    background: #145da0;
 }
 
 .skills .skills-row {
@@ -329,7 +329,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #145da0;
+    background:#2273be;
     z-index: -1;
     transition: .5s;
 }
@@ -369,6 +369,23 @@ body {
     html {
         font-size: 55%;
     }
+
+    .skills .skills-row {
+        justify-content: flex-start; /* Allinea le colonne a sinistra */
+    }
+
+    .skills .skills-column {
+        margin-left: 0; /* Rimuove il margine sinistro */
+        margin-right: 0; /* Rimuove il margine destro */
+    }
+
+    .skills .skills-column:first-child {
+        margin-left: 0; /* Imposta il margine sinistro della prima colonna a 0 */
+    }
+
+    .skills .skills-column:last-child {
+        margin-right: 0; /* Imposta il margine destro dell'ultima colonna a 0 */
+    }
 }
 
 @media (max-width: 991px) {
@@ -388,7 +405,22 @@ body {
         display: block;
     flex-direction:column;
     
-    
+    .skills .skills-row {
+        justify-content: flex-start; /* Allinea le colonne a sinistra */
+    }
+
+    .skills .skills-column {
+        margin-left: 0; /* Rimuove il margine sinistro */
+        margin-right: 0; /* Rimuove il margine destro */
+    }
+
+    .skills .skills-column:first-child {
+        margin-left: 0; /* Imposta il margine sinistro della prima colonna a 0 */
+    }
+
+    .skills .skills-column:last-child {
+        margin-right: 0; /* Imposta il margine destro dell'ultima colonna a 0 */
+    }
 
     }
 
@@ -495,6 +527,23 @@ body {
         width: 38px;
         height: 38px;
     }
+
+    .skills .skills-row {
+        justify-content: flex-start; /* Allinea le colonne a sinistra */
+    }
+
+    .skills .skills-column {
+        margin-left: 0; /* Rimuove il margine sinistro */
+        margin-right: 0; /* Rimuove il margine destro */
+    }
+
+    .skills .skills-column:first-child {
+        margin-left: 0; /* Imposta il margine sinistro della prima colonna a 0 */
+    }
+
+    .skills .skills-column:last-child {
+        margin-right: 0; /* Imposta il margine destro dell'ultima colonna a 0 */
+    }
 }
 
 @media (max-width: 462px) {
@@ -508,6 +557,23 @@ body {
 
     .contact form .input-box .input-field {
         width: 100%;
+    }
+
+    .skills .skills-row {
+        justify-content: flex-start; /* Allinea le colonne a sinistra */
+    }
+
+    .skills .skills-column {
+        margin-left: 0; /* Rimuove il margine sinistro */
+        margin-right: 0; /* Rimuove il margine destro */
+    }
+
+    .skills .skills-column:first-child {
+        margin-left: 0; /* Imposta il margine sinistro della prima colonna a 0 */
+    }
+
+    .skills .skills-column:last-child {
+        margin-right: 0; /* Imposta il margine destro dell'ultima colonna a 0 */
     }
 
     .footer {
@@ -533,5 +599,22 @@ body {
 
     .home-content h1 {
         font-size: 5rem;
+    }
+
+    .skills .skills-row {
+        justify-content: flex-start; /* Allinea le colonne a sinistra */
+    }
+
+    .skills .skills-column {
+        margin-left: 0; /* Rimuove il margine sinistro */
+        margin-right: 0; /* Rimuove il margine destro */
+    }
+
+    .skills .skills-column:first-child {
+        margin-left: 0; /* Imposta il margine sinistro della prima colonna a 0 */
+    }
+
+    .skills .skills-column:last-child {
+        margin-right: 0; /* Imposta il margine destro dell'ultima colonna a 0 */
     }
 }

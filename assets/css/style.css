@@ -12,6 +12,7 @@
 body {
     background-color: #145da0;
     color: aliceblue;
+    margin-left: 50px;
 }
 
 #menu-icon {
@@ -146,6 +147,7 @@ body {
     width: 170px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .home-sci a {
@@ -304,8 +306,8 @@ body {
     z-index: 1;
 }
 
-.footer {
-    position: absolute;
+footer {
+    position: bottom;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -352,6 +354,7 @@ body {
 
     .footer {
         padding: 2rem 4%;
+        position: absolute;
     }
 }
 
