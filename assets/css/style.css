@@ -144,13 +144,15 @@ body {
 
 
 .footer-sci {
-    padding: 10px;
+    display: flex;
+    justify-content: center;;
 }
 
 .footer-sci a {
     display: inline-flex;
     width: 40px;
     height: 40px;
+    margin: 0 5px; /* Aggiunge spazio tra le icone */
     background: transparent;
     border: 2px solid aqua;
     border-radius: 50%;
@@ -304,7 +306,7 @@ body {
 }
 
 footer {
-    position: bottom;
+    position: fixed; /* Posiziona il footer in basso */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -358,14 +360,12 @@ footer {
     }
 
     footer {
-        padding: 2rem 4%;
-        position: absolute;
+        position: static; /* Torna al posizionamento statico per evitare sovrapposizioni */
+        padding: 2rem 0;
     }
-}
 
-@media (max-width: 991px) {
     .footer-sci {
-        margin-top: 2rem; /* Aggiungi uno spazio superiore per separare le icone dal footer */
+        margin-top: 2rem;
     }
 }
 
@@ -379,12 +379,10 @@ footer {
         position: relative; /* Assicura che l'elemento .home sia posizionato */
     }
     
-    
-    
     footer {
-        position: relative; /* Assicura che il footer sia posizionato */
-        z-index: -1; /* Assicurati che il footer abbia un indice Z inferiore rispetto alle icone */
-        padding: 2rem 0; /* Aggiungi spazio intorno al footer */
+        position: fixed; /* Mantieni il footer in basso */
+        z-index: 1; /* Assicura che il footer sia sopra agli altri contenuti */
+        padding: 2rem 0;/
     }
     
    
@@ -396,10 +394,12 @@ footer {
         display: block;
     }
 
-    footer {
-        z-index: -1; /* Assicurati che il footer abbia un indice Z inferiore rispetto alle icone */
-        padding-bottom: 2rem; /* Aggiungi uno spazio inferiore per separare il footer dal resto del contenuto */
-        align-content: end;
+    .footer-sci {
+        flex-direction: row; /* Imposta le icone in riga */
+        justify-content: center; /* Centra le icone orizzontalmente */
+        align-items: center; /* Centra le icone verticalmente */
+    }
+
     }
 
     .navbar {
@@ -454,7 +454,7 @@ footer {
         transition-delay: .25s;
     }
 
-}
+
 
 @media (max-width: 520px) {
     html {
@@ -466,6 +466,11 @@ footer {
         flex-direction: column;
     }
 
+    .footer-sci {
+        flex-direction: row; /* Imposta le icone in riga */
+        justify-content: center; /* Centra le icone orizzontalmente */
+        align-items: center; /* Centra le icone verticalmente */
+    }
     
 }
 
@@ -482,14 +487,12 @@ footer {
         width: 100%;
     }
 
-   footer {
-        flex-direction: column-reverse;
+    .footer-sci {
+        flex-direction: row; /* Imposta le icone in riga */
+        justify-content: center; /* Centra le icone orizzontalmente */
+        align-items: center; /* Centra le icone verticalmente */
     }
-
-    footer p{
-        margin-top: 2rem;
-    }
-} 
+}
 
 @media (max-width: 371px) {
     .home {
@@ -505,5 +508,15 @@ footer {
 
     .home-content h1 {
         font-size: 5rem;
+    }
+    
+    .footer-sci {
+        flex-direction: row; /* Imposta le icone in riga */
+        justify-content: center; /* Centra le icone orizzontalmente */
+        align-items: center; /* Centra le icone verticalmente */
+    }
+
+    .footer p {
+        margin-top: 1rem;
     }
 }
