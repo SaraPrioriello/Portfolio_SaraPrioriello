@@ -12,7 +12,7 @@
 body {
     background-color: #145da0;
     color: aliceblue;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 #menu-icon {
@@ -99,6 +99,7 @@ body {
     height: 50px;
     display: flex;
     position: relative;
+    margin-left: 10px;
 }
 
 .btn-box a {
@@ -147,6 +148,8 @@ body {
     width: 170px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
+    margin-left: 5px;
     
 }
 
@@ -352,7 +355,7 @@ footer {
         padding: 0 4%;
     }
 
-    .footer {
+    footer {
         padding: 2rem 4%;
         position: absolute;
     }
@@ -375,7 +378,7 @@ footer {
         display: block;
     }
 
-    .footer {
+    footer {
         z-index: -1; /* Assicurati che il footer abbia un indice Z inferiore rispetto alle icone */
         padding-bottom: 2rem; /* Aggiungi uno spazio inferiore per separare il footer dal resto del contenuto */
         align-content: end;
@@ -468,11 +471,11 @@ footer {
         width: 100%;
     }
 
-   .footer {
+   footer {
         flex-direction: column-reverse;
     }
 
-    .footer p{
+    footer p{
         margin-top: 2rem;
     }
 } 

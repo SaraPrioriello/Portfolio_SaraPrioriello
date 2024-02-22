@@ -185,7 +185,7 @@ body {
     
 }
 
-.footer {
+footer {
     position: bottom;
     bottom: 0;
     left: 0;
@@ -321,13 +321,13 @@ body {
         width: 100%;
     }
 
-    .footer {
+    footer {
         flex-direction: column-reverse;
     }
 
-    .footer p{
+    footer p{
         text-align: center;
-        font-size: 1px;
+        
     }
 
     .btn-box .btn{
