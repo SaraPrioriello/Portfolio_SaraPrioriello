@@ -1,6 +1,7 @@
 /*font per header*/
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 *{
     margin: 0px;
@@ -100,8 +101,10 @@ body {
 
 .home-content p {
     font-size: 16px;
-    margin: 20px 0 40px;
+    margin: 20px 0 50px;
     position: relative;
+    font-family: "Fredoka", sans-serif;
+    letter-spacing: 1px;
 }
 
 .home-content .btn-box {
@@ -476,6 +479,10 @@ footer {
         font-size: 50%;
     }
 
+    .home-content p {
+        font-size: small;
+    }
+    
     .home-content h1 {
         display: flex;
         flex-direction: column;
