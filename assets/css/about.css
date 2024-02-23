@@ -119,9 +119,12 @@ body {
 }
 
 .about-content p {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin: 2rem 0 3rem;
     font-family:  "Fredoka", sans-serif;
+    text-align: justify;
+    
+    
 }
 
 .education {
@@ -189,7 +192,7 @@ body {
 }
 
 .education-content .content p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top: 1rem;
     font-family: "Fredoka", sans-serif;
 }
