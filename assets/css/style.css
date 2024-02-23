@@ -462,6 +462,9 @@ footer {
         padding-bottom: 50px;
     }
 
+    .home-content p {
+        text-align: justify;
+    }
    
 
     .footer-sci {
@@ -477,12 +480,14 @@ footer {
 @media (max-width: 520px) {
     html {
         font-size: 60%;
+        
     }
 
     .home-content p {
         font-size: small;
         margin-right: 30px;
         flex-direction: column;
+       
     }
 
     .home-content h1 {
@@ -634,11 +639,11 @@ footer {
         justify-content: center;
     }
     
+
     .home-content {
         display: flex;
         align-items: center;
         flex-direction: column;
-        text-align: center;
     }
 
     .home-content h1 {
