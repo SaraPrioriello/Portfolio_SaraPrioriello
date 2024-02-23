@@ -27,25 +27,27 @@
 
     <form action="#">
         <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Nome e cognome" required> <span class="focus"></span>
+            <div class="input-field field">
+                <input type="text" placeholder="Nome e cognome" id="name" class="item" autocomplete="off"> <span class="focus"></span>
+                <div class="error-text">Campo obbligatorio</div>
             </div>
-            <div class="input-field">
-                <input type="text" placeholder="Indirizzo email" required> <span class="focus"></span>
+            <div class="input-field field">
+                <input type="text" placeholder="Indirizzo email" id="email" class="item" autocomplete="off"> <span class="focus"></span> <div class="error-text">Campo obbligatorio</div>
             </div>
         </div>
 
         <div class="input-box">
-            <div class="input-field">
-                <input type="number" placeholder="Cellulare" required> <span class="focus"></span>
+            <div class="input-field field">
+                <input type="number" placeholder="Cellulare" id="phone" class="item"
+                autocomplete="off"> <span class="focus"></span><div class="error-text">Campo obbligatorio</div>
             </div>
-            <div class="input-field">
-                <input type="text" placeholder="Oggetto della mail" required> <span class="focus"></span>
+            <div class="input-field field">
+                <input type="text" placeholder="Oggetto della mail" id="subject" class="item" autocomplete="off"> <span class="focus"></span><div class="error-text">Campo obbligatorio</div>
             </div>
         </div>
 
-        <div class="textarea-field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Il tuo messaggio" required></textarea>
+        <div class="textarea-field field">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Il tuo messaggio" ></textarea>
             <span class="focus"></span>
         </div>
 
@@ -69,7 +71,9 @@
 
 
 
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 
 </body>
